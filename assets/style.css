@@ -1141,6 +1141,34 @@ p { color: var(--slate); }
 }
 .entity-table td a { color: var(--teal); }
 
+/* ENQUIRY FORM */
+.enquiry-form-section { background: var(--parchment); padding: 80px 64px; }
+.enquiry-form { max-width: 760px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field-full { margin-bottom: 20px; }
+.enquiry-form input[type="text"],
+.enquiry-form input[type="email"],
+.enquiry-form select,
+.enquiry-form textarea {
+  border: 1px solid var(--border);
+  background: var(--paper);
+  padding: 12px;
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--ink);
+}
+.enquiry-form input:focus,
+.enquiry-form select:focus,
+.enquiry-form textarea:focus { outline: none; border-color: var(--teal); }
+.hp-field { position: absolute; left: -9999px; }
+.form-submit { border: none; cursor: pointer; margin-top: 8px; }
+.form-status { margin-top: 16px; font-size: 13px; color: var(--slate); }
+@media (max-width: 900px) {
+  .form-row { grid-template-columns: 1fr; gap: 20px; }
+}
+
 /* ============================================
    LEGAL PAGES (privacy.html / terms.html)
    ============================================ */

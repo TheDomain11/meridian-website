@@ -97,10 +97,93 @@
     </div>
   </section>
 
+  <section class="enquiry-form-section">
+    <div class="container">
+      <div class="section-head">
+        <div class="rule"></div>
+        <p class="label">SUBMIT AN ENQUIRY</p>
+      </div>
+      <form id="enquiryForm" class="enquiry-form">
+        <input type="text" name="website_hp" class="hp-field" tabindex="-1" autocomplete="off">
+        <div class="form-row">
+          <div class="form-field">
+            <label class="label" for="ef-name">Name</label>
+            <input type="text" id="ef-name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label class="label" for="ef-company">Company</label>
+            <input type="text" id="ef-company" name="company">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="label" for="ef-email">Email</label>
+            <input type="email" id="ef-email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label class="label" for="ef-phone">WhatsApp / Phone</label>
+            <input type="text" id="ef-phone" name="phone">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="label" for="ef-type">Enquiry type</label>
+            <select id="ef-type" name="enquiry_type">
+              <option value="">Select one</option>
+              <option>Supplier identification and verification</option>
+              <option>RFQ management and negotiation</option>
+              <option>Contract drafting and review</option>
+              <option>Trade compliance and documentation</option>
+              <option>Quality inspection coordination</option>
+              <option>Sourcing consultation</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label class="label" for="ef-market">Destination market</label>
+            <select id="ef-market" name="destination_market">
+              <option value="">Select one</option>
+              <option>South Africa</option>
+              <option>United Kingdom</option>
+              <option>European Union</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="label" for="ef-product">Product / category</label>
+            <input type="text" id="ef-product" name="product_category">
+          </div>
+          <div class="form-field">
+            <label class="label" for="ef-value">Approx. order value</label>
+            <input type="text" id="ef-value" name="order_value">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="label" for="ef-timeline">Timeline</label>
+            <input type="text" id="ef-timeline" name="timeline">
+          </div>
+          <div class="form-field">
+            <label class="label" for="ef-suppliers">Existing supplier relationships</label>
+            <input type="text" id="ef-suppliers" name="existing_suppliers">
+          </div>
+        </div>
+        <div class="form-field form-field-full">
+          <label class="label" for="ef-message">Message</label>
+          <textarea id="ef-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="nav-cta form-submit">Submit Enquiry</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <p class="footer-brand-name"><img src="assets/logo.svg" alt="" class="logo-icon">Meridian International</p>
+        <p class="footer-brand-name">Meridian International</p>
         <p class="footer-brand-desc">A Hong Kong-registered trade advisory practice. Acting in a representative and advisory capacity on behalf of clients.</p>
       </div>
       <div class="footer-col">
@@ -125,5 +208,30 @@
   </footer>
 
   <script src="assets/main.js"></script>
+  <script>
+    document.getElementById('enquiryForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById('formStatus');
+      const btn = form.querySelector('.form-submit');
+      btn.disabled = true;
+      status.textContent = 'Sending…';
+      const payload = Object.fromEntries(new FormData(form).entries());
+      try {
+        const res = await fetch('https://platform.meridianinternational.io/.netlify/functions/submit-enquiry', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) throw new Error('Request failed');
+        status.textContent = 'Thank you — your enquiry has been received. We respond within one business day.';
+        form.reset();
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please email enquiries@meridianinternational.io directly.';
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
 </body>
 </html>

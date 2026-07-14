@@ -1142,7 +1142,7 @@ p { color: var(--slate); }
 .entity-table td a { color: var(--teal); }
 
 /* ENQUIRY FORM */
-.enquiry-form-section { background: var(--parchment); padding: 80px 64px; }
+.enquiry-form-section { background: var(--parchment); padding: 80px 64px; scroll-margin-top: 80px; }
 .enquiry-form { max-width: 760px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
 .form-field { display: flex; flex-direction: column; gap: 8px; }

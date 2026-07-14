@@ -303,7 +303,9 @@ p { color: var(--slate); }
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background: var(--paper);
   position: relative;
   padding: 96px 64px 64px;
@@ -327,7 +329,7 @@ p { color: var(--slate); }
   z-index: 1;
   max-width: 700px;
 }
-.hero-inner h1 { white-space: normal; }
+.hero-inner h1 { white-space: normal; font-size: clamp(2.6rem, 7vw, 72px); }
 .hero-inner h1 br { content: ''; }
 .hero-rule {
   width: 48px;
@@ -361,36 +363,39 @@ p { color: var(--slate); }
 .hero-cta .arrow { color: var(--rule); }
 
 /* CREDENTIAL STRIP */
-.credential-strip {
+.cred-strip {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--parchment);
 }
-.credential-item {
+.cred-item {
   flex: 1 1 auto;
   min-width: 160px;
   padding: 20px 32px;
   border-right: 1px solid var(--border);
 }
-.credential-item:last-child { border-right: none; }
-.credential-item .c-label {
+.cred-item:last-child { border-right: none; }
+.cred-label {
   font-family: var(--font-mono);
   font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   color: var(--stone);
-  margin-bottom: 6px;
+  display: block;
+  margin-bottom: 5px;
 }
-.credential-item .c-value {
+.cred-value {
   font-family: var(--font-mono);
   font-size: 12px;
+  font-weight: 400;
   color: var(--ink-mid);
 }
 
 /* VALUE PROPOSITION */
-.value-section { background: var(--parchment); padding: 96px 64px; }
+.value-section { background: var(--parchment); padding: 72px 64px; }
 .value-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -523,6 +528,7 @@ p { color: var(--slate); }
   margin-top: 20px;
 }
 .page-hero-light .intro + .intro { margin-top: 16px; }
+.services-hero .intro { max-width: 560px; }
 
 /* ============================================
    PAGE: about.html
@@ -1205,9 +1211,9 @@ p { color: var(--slate); }
   .fee-quote { padding: 48px 24px; }
   .hero { padding-top: 120px; min-height: auto; }
 
-  .credential-strip { flex-direction: column; }
-  .credential-item { border-right: none; border-bottom: 1px solid var(--border); }
-  .credential-item:last-child { border-bottom: none; }
+  .cred-strip { flex-direction: column; }
+  .cred-item { border-right: none; border-bottom: 1px solid var(--border); }
+  .cred-item:last-child { border-bottom: none; }
 
   .cta-band { flex-direction: column; align-items: flex-start; }
   .footer-grid { grid-template-columns: 1fr; }

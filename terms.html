@@ -8,47 +8,30 @@
   <meta name="description" content="Terms of Service for Meridian International — the conditions governing use of our website and engagement of our sourcing and procurement services." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .legal-body { max-width: 760px; margin: 0 auto; padding: 80px 32px; }
-    .legal-body h1 { margin-bottom: 0.5rem; }
-    .legal-meta { font-size: 0.85rem; color: var(--mid-grey); margin-bottom: 3rem; display: block; }
-    .legal-body h2 { font-size: 1.2rem; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--navy); }
-    .legal-body p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1rem; }
-    .legal-body ul { padding-left: 1.5rem; margin-bottom: 1rem; }
-    .legal-body ul li { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-    .legal-divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
-    .legal-contact-box { background: var(--off-white); border: 1px solid var(--border); padding: 28px 32px; margin-top: 3rem; }
-    .legal-contact-box h3 { color: var(--navy); margin-bottom: 0.75rem; font-size: 1rem; }
-    .legal-contact-box p { margin: 0; font-size: 0.9rem; }
-    .legal-contact-box a { color: var(--teal); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
 
-  <nav class="nav scrolled" id="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-mark">M</span>
-        <span class="logo-text">MERIDIAN <span class="logo-thin">INTERNATIONAL</span></span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="index.html" class="brand">Meridian International</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="services.html">Services</a></li>
         <li><a href="process.html">Process</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="nav-cta">Get in Touch</a></li>
+        <li><a href="contact.html" class="nav-cta">Enquire</a></li>
       </ul>
     </div>
   </nav>
 
-  <div style="padding-top: 72px;">
+  <div class="page-body">
     <div class="legal-body">
 
-      <p class="eyebrow">LEGAL</p>
+      <p class="label">LEGAL</p>
       <h1>Terms of Service</h1>
       <span class="legal-meta">Meridian Capital Holdings Limited &nbsp;·&nbsp; Last updated: June 2026</span>
 
@@ -174,51 +157,33 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="footer-logo">
-          <span class="logo-mark">M</span>
-          <span class="logo-text">MERIDIAN <span class="logo-thin">INTERNATIONAL</span></span>
-        </a>
-        <p class="footer-tagline">China Sourcing &amp; Procurement</p>
-        <p class="footer-desc">A Hong Kong-registered sourcing firm with on-the-ground presence in Guangzhou. Verified suppliers, hands-on quality control, transparent pricing.</p>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-name">Meridian International</p>
+        <p class="footer-brand-desc">A Hong Kong-registered trade advisory practice. Acting in a representative and advisory capacity on behalf of clients.</p>
       </div>
-      <div class="footer-nav">
-        <p class="footer-col-title">Pages</p>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="process.html">Process</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="footer-col">
+        <p class="label footer-col-label">Pages</p>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
-      <div class="footer-contact">
-        <p class="footer-col-title">Connect</p>
-        <ul>
-          <li><a href="mailto:enquiries@meridianinternational.io">enquiries@meridianinternational.io</a></li>
-          <li><a href="https://wa.me/85262971699" target="_blank" rel="noopener">WhatsApp · +852 6297 1699</a></li>
-          <li>LinkedIn <span style="font-size:0.75rem;opacity:0.5">(coming soon)</span></li>
-        </ul>
-      </div>
-      <div class="footer-legal">
-        <p class="footer-col-title">Legal</p>
-        <p>Meridian International is a trading name of Meridian Capital Holdings Limited, a company registered in Hong Kong.</p>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
+      <div class="footer-col">
+        <p class="label footer-col-label">Contact</p>
+        <p><a href="mailto:enquiries@meridianinternational.io" style="color:inherit;text-decoration:none;">enquiries@meridianinternational.io</a></p>
+        <p>WhatsApp · <a href="https://wa.me/85262971699" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">+852 6297 1699</a></p>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>© 2026 Meridian Capital Holdings Limited. All rights reserved.</p>
-        <p>Hong Kong Business Registration: 76904892-001-08-25-5</p>
-      </div>
+      <p class="copyright">© 2026 Meridian Capital Holdings Limited. All rights reserved.</p>
+      <p class="br-number">BR 76904892-001-08-25-5</p>
     </div>
+    <p class="footer-legal-line">Meridian International is a trading name of Meridian Capital Holdings Limited. Meridian does not provide regulated legal advice. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>

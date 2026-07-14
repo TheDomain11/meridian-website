@@ -259,12 +259,11 @@ p { color: var(--slate); }
 }
 .footer-legal-line {
   max-width: var(--container);
-  margin: 16px auto 0;
+  margin: 16px 0 0;
   font-family: var(--font-body);
   font-weight: 300;
   font-size: 11px;
   color: rgba(248,246,241,0.3);
-  max-width: 480px;
   line-height: 1.6;
 }
 .footer-legal-line a {
@@ -549,6 +548,14 @@ p { color: var(--slate); }
 }
 .about-copy p:last-child { margin-bottom: 0; }
 
+.about-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--rule);
+}
 .cred-table { width: 100%; border-collapse: collapse; }
 .cred-table tr { border-bottom: 1px solid var(--border); }
 .cred-table tr:last-child { border-bottom: none; }

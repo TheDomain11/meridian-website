@@ -783,6 +783,32 @@ p { color: var(--slate); }
   max-width: 640px;
 }
 
+.fee-table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+.fee-table th {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--stone);
+  text-align: left;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--border);
+}
+.fee-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.fee-table tr:last-child td { border-bottom: none; }
+.fee-table td:first-child { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--ink); width: 40%; }
+.fee-table td.fee-amount { font-family: var(--font-mono); font-size: 13px; color: var(--ink); white-space: nowrap; }
+.fee-table td.fee-basis { font-family: var(--font-body); font-weight: 300; font-size: 13px; color: var(--slate); }
+@media (max-width: 640px) {
+  .fee-table { font-size: 12px; }
+  .fee-table td { padding: 10px 0; }
+}
+
 .illustrative-badge {
   font-family: var(--font-body);
   font-weight: 500;

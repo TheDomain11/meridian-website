@@ -129,14 +129,28 @@ p { color: var(--slate); }
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  text-decoration: none;
+}
+.brand-text {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.brand-primary {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.brand-secondary {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 0.2em;
+  font-size: 10px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--ink);
-  text-decoration: none;
+  color: var(--teal);
 }
 .logo-icon {
   width: 28px;

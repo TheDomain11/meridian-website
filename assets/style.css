@@ -651,6 +651,7 @@ p { color: var(--slate); }
    PAGE: services.html
    ============================================ */
 .service-detail { padding: 80px 64px; }
+.service-primary { padding: 100px 64px; }
 .bg-paper { background: var(--paper); }
 .bg-parchment { background: var(--parchment); }
 .service-id {
@@ -662,6 +663,7 @@ p { color: var(--slate); }
   margin-bottom: 20px;
 }
 .service-detail h2 { font-size: 34px; margin-bottom: 24px; }
+.service-primary h2 { font-size: 38px; font-weight: 700; }
 .service-what-label {
   font-family: var(--font-body);
   font-weight: 500;
@@ -714,19 +716,12 @@ p { color: var(--slate); }
 }
 .deliverables li strong { font-weight: 500; color: var(--ink); }
 
-.scope-callout, .ip-callout {
+.scope-callout {
   padding: 20px 24px;
   margin-bottom: 16px;
   max-width: 760px;
-}
-.scope-callout {
   background: rgba(196,151,59,0.05);
   border-left: 2px solid rgba(196,151,59,0.4);
-}
-.ip-callout {
-  background: rgba(10,126,107,0.04);
-  border-left: 2px solid rgba(10,126,107,0.4);
-  margin-bottom: 0;
 }
 .scope-callout .c-label {
   font-family: var(--font-body);
@@ -737,21 +732,36 @@ p { color: var(--slate); }
   letter-spacing: 0.06em;
   margin-bottom: 8px;
 }
-.ip-callout .c-label {
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 9px;
-  color: rgba(10,126,107,0.6);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 8px;
-}
-.scope-callout p, .ip-callout p {
+.scope-callout p {
   font-family: var(--font-body);
   font-weight: 300;
   font-size: 14px;
   color: var(--slate);
   font-style: italic;
+}
+
+/* Inline disclaimer sentences embedded within body-copy (not full callout blocks) */
+.disclaimer-note {
+  color: var(--ink-mid);
+  font-style: italic;
+}
+
+/* Consolidated IP notice replacing the per-service MERIDIAN IP callouts */
+.ip-notice {
+  background: rgba(10,126,107,0.04);
+  border-top: 1px solid rgba(10,126,107,0.15);
+  border-bottom: 1px solid rgba(10,126,107,0.15);
+  padding: 28px 64px;
+}
+.ip-notice p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 13px;
+  color: var(--slate);
+  font-style: italic;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .services-footer-band {
@@ -1320,6 +1330,7 @@ p { color: var(--slate); }
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   .service-detail h2 { font-size: 26px; }
+  .service-primary h2 { font-size: 28px; }
 }
 
 /* ── REDUCED MOTION ── */

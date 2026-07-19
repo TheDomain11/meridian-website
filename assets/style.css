@@ -807,7 +807,7 @@ p { color: var(--slate); }
   max-width: 640px;
 }
 
-.fee-table { width: 100%; border-collapse: collapse; margin-top: 24px; }
+.fee-table { width: 100%; table-layout: fixed; border-collapse: collapse; margin-top: 24px; }
 .fee-table th {
   font-family: var(--font-body);
   font-weight: 500;
@@ -826,7 +826,7 @@ p { color: var(--slate); }
 }
 .fee-table tr:last-child td { border-bottom: none; }
 .fee-table td:first-child { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--ink); width: 40%; }
-.fee-table td.fee-amount { font-family: var(--font-mono); font-size: 13px; color: var(--ink); white-space: nowrap; }
+.fee-table td.fee-amount { font-family: var(--font-mono); font-size: 13px; color: var(--ink); }
 .fee-table td.fee-basis { font-family: var(--font-body); font-weight: 300; font-size: 13px; color: var(--slate); }
 @media (max-width: 640px) {
   .fee-table { font-size: 12px; }

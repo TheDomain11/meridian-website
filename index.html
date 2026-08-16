@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meridian International — Trade Facilitation &amp; Compliance</title>
-  <meta name="description" content="Meridian International is a Hong Kong-registered trade facilitation and compliance firm helping South African, UK, and EU businesses import from China with verified suppliers, compliant documentation, and enforceable supply agreements." />
+  <title>Meridian International — Coming Soon</title>
+  <meta name="description" content="Meridian International is a Hong Kong-registered trade facilitation and compliance firm helping South African, UK, and EU businesses import from China. Leave your email to be notified when we open." />
+  <meta name="robots" content="noindex" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -12,194 +13,193 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style>
+    .cs-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 64px 24px;
+    }
+    .cs-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 56px;
+    }
+    .cs-mark { width: 34px; height: 34px; display: block; }
+    .cs-brand-text { display: flex; flex-direction: column; align-items: flex-start; }
+    .cs-brand-primary {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 19px;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      line-height: 1.1;
+    }
+    .cs-brand-secondary {
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    .cs-label {
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--stone);
+      margin-bottom: 20px;
+    }
+    .cs-headline {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-style: italic;
+      font-size: clamp(30px, 5vw, 48px);
+      color: var(--ink);
+      line-height: 1.2;
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+    .cs-rule {
+      width: 56px;
+      height: 2px;
+      background: var(--rule);
+      margin: 0 auto 28px;
+    }
+    .cs-sub {
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--slate);
+      max-width: 540px;
+      margin-bottom: 44px;
+    }
+    .cs-form {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+      max-width: 420px;
+      margin-bottom: 14px;
+    }
+    .cs-form input[type="email"] {
+      flex: 1;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+      outline: none;
+    }
+    .cs-form input[type="email"]:focus { border-color: var(--teal); }
+    .cs-form button {
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      color: var(--paper);
+      background: var(--ink);
+      border: none;
+      padding: 14px 24px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .cs-form button:hover { background: var(--ink-mid); }
+    .cs-fineprint {
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 12px;
+      color: var(--stone);
+      margin-bottom: 8px;
+    }
+    .cs-error {
+      display: none;
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: #B3261E;
+      margin-bottom: 8px;
+    }
+    .cs-success {
+      display: none;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 19px;
+      color: var(--teal);
+      max-width: 480px;
+    }
+    @media (max-width: 520px) {
+      .cs-form { flex-direction: column; }
+    }
+    .cs-footer {
+      margin-top: 72px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      color: var(--stone);
+      line-height: 1.8;
+    }
+    .cs-footer a { color: var(--stone); text-decoration: underline; }
+  </style>
 </head>
 <body>
 
-  <nav class="site-nav">
-    <div class="site-nav-inner">
-      <a href="index.html" class="brand"><img src="assets/logo.svg" alt="" class="logo-icon"><span class="brand-text"><span class="brand-primary">Meridian</span><span class="brand-secondary">International</span></span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="process.html">Process</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html#enquiry-form" class="nav-cta">Enquire</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="cs-wrap">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h1>Import from China.<br>Compliant. Verified. Structured.</h1>
-      <div class="hero-rule"></div>
-      <p class="hero-sub">Meridian International is a Hong Kong-registered trade facilitation and compliance firm. We help South African, UK, and EU businesses source from China with verified suppliers, documentation that meets destination-market requirements, and supply agreements that protect the buyer. Meridian acts in a representative and advisory capacity on behalf of its clients — not as buyer, trader, or principal.</p>
-      <a href="contact.html#enquiry-form" class="hero-cta">Submit an Enquiry <span class="arrow">→</span></a>
+    <div class="cs-brand">
+      <img src="assets/logo.svg" alt="" class="cs-mark">
+      <div class="cs-brand-text">
+        <span class="cs-brand-primary">Meridian</span>
+        <span class="cs-brand-secondary">International</span>
+      </div>
     </div>
-  </section>
 
-  <!-- CREDENTIAL STRIP -->
-  <div class="cred-strip">
-    <div class="cred-item">
-      <p class="cred-label">Jurisdiction</p>
-      <p class="cred-value">Hong Kong SAR</p>
+    <p class="cs-label">Hong Kong — Trade Facilitation &amp; Compliance</p>
+    <h1 class="cs-headline">Something is taking shape.</h1>
+    <div class="cs-rule"></div>
+    <p class="cs-sub">Meridian International is preparing to open for client engagements — helping South African, UK, and EU businesses import from China with verified suppliers and compliant documentation. Leave your email and we'll let you know the moment we're ready.</p>
+
+    <form id="comingSoonForm" class="cs-form" name="coming-soon-updates" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="coming-soon-updates" />
+      <p style="position:absolute; left:-9999px;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <input type="email" name="email" id="csEmail" placeholder="you@company.com" required />
+      <button type="submit">Notify Me</button>
+    </form>
+    <p class="cs-fineprint">No spam. One email, when we're open.</p>
+    <p class="cs-error" id="csError">Something went wrong — please try again, or email us directly.</p>
+    <p class="cs-success" id="csSuccess">Thank you — we'll be in touch when Meridian International opens.</p>
+
+    <div class="cs-footer">
+      <p>© 2026 Meridian Capital Holdings Limited. All rights reserved. · BR 76904892-001-08-25-5</p>
+      <p>In the meantime, direct enquiries: <a href="mailto:enquiries@meridianinternational.io">enquiries@meridianinternational.io</a></p>
     </div>
-    <div class="cred-item">
-      <p class="cred-label">Access</p>
-      <p class="cred-value">Pearl River Delta</p>
-    </div>
-    <div class="cred-item">
-      <p class="cred-label">Structure</p>
-      <p class="cred-value">Trade facilitation and compliance</p>
-    </div>
+
   </div>
 
-  <!-- VALUE PROPOSITION -->
-  <section class="value-section">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="rule"></div>
-        <p class="label">WHY MERIDIAN</p>
-      </div>
-      <div class="value-grid">
-        <div class="value-col reveal">
-          <p class="value-title">Representative, not principal</p>
-          <p class="value-body">Meridian does not buy, hold, or trade goods. The firm acts in a representative and advisory capacity on behalf of its clients. The commercial relationship is between client and supplier. Meridian manages that relationship on the client's behalf.</p>
-        </div>
-        <div class="value-col reveal">
-          <p class="value-title">Pearl River Delta access</p>
-          <p class="value-body">Meridian operates from Hong Kong with direct access to the Pearl River Delta manufacturing corridor. Supplier identification, verification, and assessment draw on established networks and direct familiarity with how manufacturing and procurement operate within China's internal systems.</p>
-        </div>
-        <div class="value-col reveal">
-          <p class="value-title">Professionally structured</p>
-          <p class="value-body">Every document Meridian produces — supplier assessments, RFQ briefs, contract reviews, compliance advisories, engagement letters — is prepared to a professional standard.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <script>
+    document.getElementById('comingSoonForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var form = e.target;
+      var data = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      }).then(function () {
+        form.style.display = 'none';
+        document.querySelector('.cs-fineprint').style.display = 'none';
+        document.getElementById('csSuccess').style.display = 'block';
+      }).catch(function () {
+        document.getElementById('csError').style.display = 'block';
+      });
+    });
+  </script>
 
-  <!-- SERVICES -->
-  <section class="services-list-section">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="rule"></div>
-        <p class="label">SERVICES</p>
-      </div>
-
-      <div class="service-row reveal">
-        <p class="service-num">01</p>
-        <div>
-          <p class="service-title">Supplier identification and verification</p>
-          <p class="service-body">Research, registration verification, and scored assessment of manufacturers using the Meridian Supplier Assessment Protocol. Delivered as a documented shortlist with a primary recommendation and stated reasoning.</p>
-        </div>
-      </div>
-
-      <div class="service-row reveal">
-        <p class="service-num">02</p>
-        <div>
-          <p class="service-title">RFQ management and negotiation</p>
-          <p class="service-body">Structured preparation, distribution, and management of requests for quotation. All quotes compared on a like-for-like basis. Recommendation and negotiation record delivered in writing.</p>
-        </div>
-      </div>
-
-      <div class="service-row reveal">
-        <p class="service-num">03</p>
-        <div>
-          <p class="service-title">Supply Agreement Coordination &amp; Documentation Support</p>
-          <p class="service-body">Coordination and structuring support for the supply agreement between client and supplier — covering price, quantity, quality standards, delivery obligations, and remedies for breach.</p>
-        </div>
-      </div>
-
-      <div class="service-row reveal">
-        <p class="service-num">04</p>
-        <div>
-          <p class="service-title">Trade Documentation Support &amp; General Tariff Information</p>
-          <p class="service-body">HS classification, import duty advisory, applicable trade agreement analysis, and commercial document preparation — with specific coverage of South African SARS documentation requirements, NRCS compulsory specification compliance, and ICASA type approval for electronics and RF equipment.</p>
-        </div>
-      </div>
-
-      <div class="service-row reveal">
-        <p class="service-num">05</p>
-        <div>
-          <p class="service-title">Quality inspection coordination</p>
-          <p class="service-body">Briefing and management of pre-shipment inspections through QIMA, Bureau Veritas, SGS, or Intertek. Written advisory on the accept, reject, or remediate decision issued within 24 hours of the inspection report.</p>
-        </div>
-      </div>
-
-      <div class="service-row reveal">
-        <p class="service-num">06</p>
-        <div>
-          <p class="service-title">Procurement consultation</p>
-          <p class="service-body">A structured advisory session for businesses evaluating a China sourcing mandate. Findings and recommended next steps delivered in writing within 24 hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SA COMPLIANCE CALLOUT -->
-  <section class="value-section" style="background: var(--color-ink); color: var(--color-paper);">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="rule" style="background: var(--color-gold);"></div>
-        <p class="label" style="color: var(--color-stone);">FOR SOUTH AFRICAN IMPORTERS</p>
-      </div>
-      <div class="value-grid">
-        <div class="value-col reveal">
-          <p class="value-title" style="color: var(--color-paper);">SARS documentation requirements</p>
-          <p class="value-body" style="color: var(--color-stone);">Since April 2025, SARS requires invoice data — including Incoterms and payment terms — to be captured at declaration stage. Declarations without compliant invoice data face a higher probability of inspection and audit. Meridian prepares commercial documentation to meet these requirements before goods leave China.</p>
-        </div>
-        <div class="value-col reveal">
-          <p class="value-title" style="color: var(--color-paper);">NRCS and ICASA pre-clearance</p>
-          <p class="value-body" style="color: var(--color-stone);">Electronics and hardware imported into South Africa require NRCS Letters of Authority and, where RF or telecoms equipment is involved, ICASA type approval — both secured before customs release. Meridian advises on applicable compulsory specifications and assists with documentation for the pre-clearance process.</p>
-        </div>
-        <div class="value-col reveal">
-          <p class="value-title" style="color: var(--color-paper);">Supplier verification from within China</p>
-          <p class="value-body" style="color: var(--color-stone);">Ghost factories, bait-and-switch quality, and misrepresented export credentials are documented risks for SA importers sourcing from China without on-the-ground representation. Meridian verifies suppliers through China's National Enterprise Credit Information Publicity System and established Pearl River Delta networks before any commercial engagement.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER CTA BAND -->
-  <div class="cta-band">
-    <div>
-      <p class="cta-label">FOR ENQUIRIES</p>
-      <a href="mailto:enquiries@meridianinternational.io" class="cta-email">enquiries@meridianinternational.io</a>
-    </div>
-    <a href="contact.html" class="btn-outline-gold">Request a Consultation →</a>
-  </div>
-
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <p class="footer-brand-name">Meridian International</p>
-        <p class="footer-brand-desc">A Hong Kong-registered trade facilitation and compliance firm. Acting in a representative and advisory capacity on behalf of clients.</p>
-      </div>
-      <div class="footer-col">
-        <p class="label footer-col-label">Pages</p>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="process.html">Process</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <p class="label footer-col-label">Contact</p>
-        <p><a href="mailto:enquiries@meridianinternational.io" style="color:inherit;text-decoration:none;">enquiries@meridianinternational.io</a></p>
-        <p>WhatsApp · <a href="https://wa.me/85262971699" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">+852 6297 1699</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="copyright">© 2026 Meridian Capital Holdings Limited. All rights reserved.</p>
-      <p class="br-number">BR 76904892-001-08-25-5</p>
-    </div>
-    <p class="footer-legal-line">Meridian Capital Holdings Limited (trading as Meridian International) acts solely in a commercial representative and advisory capacity. It is not a law firm and does not provide legal, customs, or tax advice or services.</p>
-    <p class="footer-legal-line"><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> · <a href="jurisdiction.html">Jurisdiction &amp; Regulatory Notices</a> · © Meridian Capital Holdings Limited</p>
-  </footer>
-
-  <script src="assets/main.js"></script>
 </body>
 </html>

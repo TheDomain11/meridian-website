@@ -1,0 +1,9 @@
+# Coming-soon mode — everything routes to the holding page except real static assets.
+# Restore the full site by deleting this file (see README-COMING-SOON.md).
+
+/assets/*              /assets/:splat              200
+/favicon.ico           /favicon.ico                200
+/favicon.svg           /favicon.svg                200
+/apple-touch-icon.png  /apple-touch-icon.png       200
+/george.jpg            /george.jpg                 200
+/*                     /index.html                 200

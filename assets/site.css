@@ -450,3 +450,4 @@ h3        { font-size: 28px; line-height: 35px; }
 .stat-what { margin-top: var(--space-3); }
 .fees.method td { padding-top: 18px; padding-bottom: 18px; }
 .section-head { margin-bottom: 48px; }
+.cat-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: #C9A66E; margin-bottom: var(--space-3); }

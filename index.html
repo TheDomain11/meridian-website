@@ -44,7 +44,7 @@
 
   <div class="notice-bar" role="region" aria-label="Regulatory update">
     <div class="container notice-bar-inner">
-      <span class="tag"><i class="dot" aria-hidden="true"></i>Regulatory update, 29 September 2026</span>
+      <span class="tag">Regulatory update, 29 September 2026</span>
       <span>South Africa now requires a Certificate of Conformity for listed Chinese goods. <a href="#updates">Read the update</a></span>
     </div>
   </div>
@@ -87,15 +87,12 @@
       </div>
     </section>
 
-    <!-- Key facts -->
-    <div class="keyfacts">
-      <div class="container">
-        <dl class="keyfacts-bar" aria-label="Key facts">
-          <div><dt>Registered</dt><dd>Hong Kong<span class="keyfacts-ref">BR 76904892-001-08-25-5</span></dd></div>
-          <div><dt>Fees</dt><dd>Fixed, in USD, stated before work starts</dd></div>
-          <div><dt>Goods payments</dt><dd>You pay the supplier directly</dd></div>
-          <div><dt>Commissions</dt><dd>None from suppliers</dd></div>
-        </dl>
+    <!-- Spec strip -->
+    <div class="spec-strip">
+      <div class="container spec-grid">
+        <div class="spec-cell"><span>Registered</span>Hong Kong, BR 76904892-001-08-25-5</div>
+        <div class="spec-cell"><span>Fees</span>Fixed, in USD, stated before work starts</div>
+        <div class="spec-cell"><span>Goods payments</span>Client pays the supplier directly</div>
       </div>
     </div>
 
@@ -158,56 +155,38 @@
       </div>
     </section>
 
-    <!-- Regulatory updates: live-style feed panel -->
-    <section class="section section-feed" id="updates" aria-labelledby="updates-title">
+    <!-- Regulatory notice: South Africa PVoC (dark band) -->
+    <section class="section section-dark" id="updates" aria-labelledby="updates-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow"><span class="idx">03</span>Regulatory updates</p>
           <h2 id="updates-title">Rule changes that affect importers from China</h2>
+          <p>Each entry is dated, sourced and linked, newest first. Clients with Regulatory Change Monitoring are notified of changes that affect their product categories.</p>
         </div>
-        <div class="feed" role="region" aria-label="Regulatory update feed">
-          <div class="feed-bar">
-            <span class="feed-live"><i class="dot" aria-hidden="true"></i>Live feed</span>
-            <span class="feed-name">Regulatory changes</span>
-            <span class="feed-meta">Last checked <time id="feed-checked" datetime="2026-09-29">29 Sep 2026</time></span>
-          </div>
-          <div class="feed-sub">
-            <span>1 active entry</span>
-            <span>Newest first</span>
-            <span>Dated, sourced and linked</span>
-          </div>
-          <details class="feed-entry" id="pvoc-notice" open>
-            <summary>
-              <time class="fe-date" datetime="2026-09-29">29 Sep 2026</time>
-              <span class="fe-tag">South Africa</span>
-              <span class="fe-title" id="pvoc-title">Certificate of Conformity now required for listed Chinese goods</span>
-              <span class="fe-status"><i class="dot dot-static" aria-hidden="true"></i>In force</span>
-            </summary>
-            <div class="fe-body">
-              <p class="update-lede">The Pre-Export Verification of Conformity (PVoC) programme became mandatory on 20 September 2026. Phase 1 applies to imports from China. It was gazetted on 20 March 2026, with a six-month transition.</p>
-              <p class="cat-label">Product groups named in reports of the notice</p>
-              <ul class="cat-list">
-                <li><span class="n">01</span>Cosmetics and toiletries, including hair products and sanitary towels</li>
-                <li><span class="n">02</span>Cookware and kitchenware, including non-stick pans and plastic utensils</li>
-                <li><span class="n">03</span>Furniture</li>
-                <li><span class="n">04</span>Bicycles and protective sports gear</li>
-                <li><span class="n">05</span>Plastic toys</li>
-                <li><span class="n">06</span>Generators</li>
-                <li><span class="n">07</span>Gas stoves</li>
-                <li><span class="n">08</span>Plumbing supplies</li>
-                <li><span class="n">09</span>Construction materials</li>
-              </ul>
-              <dl class="spec-list">
-                <div><dt>Basis</dt><dd>Government Gazette No. 54374, 20 March 2026, issued by the Department of Trade, Industry and Competition. Phase 1 covers imports from China.</dd></div>
-                <div><dt>Assessment</dt><dd>Conformity assessment is undertaken within the mandate of the South African Bureau of Standards. Meridian does not issue certificates.</dd></div>
-                <div><dt>Enforcement</dt><dd>SARS and the Border Management Authority. Industry reports say goods without a certificate may be refused entry, returned or destroyed at the importer&rsquo;s expense.</dd></div>
-                <div><dt>Meridian&rsquo;s part</dt><dd>The Import Compliance Assessment establishes whether your product is covered and what the supplier must provide before you order.</dd></div>
-              </dl>
-              <p class="dark-note">The list above is not exhaustive. Sources: reports of the Gazette by <a href="https://www.freightnews.co.za/article/sa-clamps-down-on-unregulated-chinese-imports" rel="noopener">Freight News</a>, <a href="https://www.logisticsbusinessafrica.co.za/new-rules-for-chinese-imports-south-africa-cracks-down-on-unregulated-goods/" rel="noopener">Logistics Business Africa</a> and <a href="https://www.tuv.com/regulations-and-standards/en/south-africa-pre-export-verification-of-conformity-pvoc-for-specific-unregulated-products.html" rel="noopener">TÜV Rheinland</a>. Checked on 29 September 2026. The Gazette holds the full scope, so confirm it before you order.</p>
-            </div>
-          </details>
-          <div class="feed-foot">Clients with Regulatory Change Monitoring are notified of changes that affect their product categories.</div>
-        </div>
+        <article class="update-entry" id="pvoc-notice" aria-labelledby="pvoc-title">
+        <span class="update-tag">29 September 2026. South Africa</span>
+        <h3 id="pvoc-title">South Africa now requires a Certificate of Conformity for listed Chinese goods</h3>
+        <p class="update-lede">The Pre-Export Verification of Conformity (PVoC) programme became mandatory on 20 September 2026. Phase 1 applies to imports from China. It was gazetted on 20 March 2026, with a six-month transition.</p>
+        <p class="cat-label">Product groups named in reports of the notice</p>
+        <ul class="cat-list">
+          <li><span class="n">01</span>Cosmetics and toiletries, including hair products and sanitary towels</li>
+          <li><span class="n">02</span>Cookware and kitchenware, including non-stick pans and plastic utensils</li>
+          <li><span class="n">03</span>Furniture</li>
+          <li><span class="n">04</span>Bicycles and protective sports gear</li>
+          <li><span class="n">05</span>Plastic toys</li>
+          <li><span class="n">06</span>Generators</li>
+          <li><span class="n">07</span>Gas stoves</li>
+          <li><span class="n">08</span>Plumbing supplies</li>
+          <li><span class="n">09</span>Construction materials</li>
+        </ul>
+        <dl class="spec-list">
+          <div><dt>Basis</dt><dd>Government Gazette No. 54374, 20 March 2026, issued by the Department of Trade, Industry and Competition. Phase 1 covers imports from China.</dd></div>
+          <div><dt>Assessment</dt><dd>Conformity assessment is undertaken within the mandate of the South African Bureau of Standards. Meridian does not issue certificates.</dd></div>
+          <div><dt>Enforcement</dt><dd>SARS and the Border Management Authority. Industry reports say goods without a certificate may be refused entry, returned or destroyed at the importer&rsquo;s expense.</dd></div>
+          <div><dt>Meridian&rsquo;s part</dt><dd>The Import Compliance Assessment establishes whether your product is covered and what the supplier must provide before you order.</dd></div>
+        </dl>
+        <p class="dark-note">The list above is not exhaustive. Sources: reports of the Gazette by <a href="https://www.freightnews.co.za/article/sa-clamps-down-on-unregulated-chinese-imports" rel="noopener">Freight News</a>, <a href="https://www.logisticsbusinessafrica.co.za/new-rules-for-chinese-imports-south-africa-cracks-down-on-unregulated-goods/" rel="noopener">Logistics Business Africa</a> and <a href="https://www.tuv.com/regulations-and-standards/en/south-africa-pre-export-verification-of-conformity-pvoc-for-specific-unregulated-products.html" rel="noopener">TÜV Rheinland</a>. Checked on 29 September 2026. The Gazette holds the full scope, so confirm it before you order.</p>
+        </article>
       </div>
     </section>
 
@@ -507,7 +486,7 @@
               <p class="small muted">LLB, LLM. Not admitted to practise law in any jurisdiction.</p>
             </div>
           </div>
-          <dl class="keyfacts">
+          <dl class="facts">
           <div><dt>Registered</dt><dd>Hong Kong SAR</dd></div>
           <div><dt>Company</dt><dd>Meridian Capital Holdings Limited</dd></div>
           <div><dt>Business registration</dt><dd><span class="reference">76904892-001-08-25-5</span></dd></div>
@@ -688,16 +667,6 @@
           btn.disabled = false;
         }
       });
-    })();
-  </script>
-  <script>
-    (function () {
-      var t = document.getElementById('feed-checked');
-      if (!t) return;
-      var d = new Date(t.getAttribute('datetime') + 'T00:00:00Z'), n = new Date();
-      var days = Math.floor((Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate()) - d.getTime()) / 864e5);
-      if (isNaN(days) || days < 0) return;
-      t.textContent += days === 0 ? ' (today)' : days === 1 ? ' (yesterday)' : ' (' + days + ' days ago)';
     })();
   </script>
 </body>

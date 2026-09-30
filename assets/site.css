@@ -477,3 +477,13 @@ h3        { font-size: 28px; line-height: 35px; }
 .card { transition: border-color .15s ease; }
 .card:hover { border-color: var(--bronze); }
 .notice-bar { font-size: 14px; }
+
+/* service cards: price under the title, tidy grid */
+.service-card h3 { order: 1; }
+.service-card .service-time { order: 2; }
+.service-card p.service-fee { order: 3; flex-grow: 0; margin-top: var(--space-1); padding-top: 0; border-top: 0; font-size: 20px; line-height: 26px; color: var(--ink); margin-bottom: var(--space-3); }
+.service-card > p:not(.service-time):not(.service-fee) { flex-grow: 1; }
+.service-card > p:not(.service-time):not(.service-fee) { order: 4; }
+.service-card .service-cta { order: 5; margin-top: var(--space-3); }
+@media (min-width: 1040px) { .stage-grid.core > .tier-featured { grid-row: span 2; } }
+@media (min-width: 1040px) { .stage-grid.core > .tier-featured .btn { margin-top: var(--space-4); } }

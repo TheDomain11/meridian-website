@@ -451,3 +451,16 @@ h3        { font-size: 28px; line-height: 35px; }
 .fees.method td { padding-top: 18px; padding-bottom: 18px; }
 .section-head { margin-bottom: 48px; }
 .cat-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: #C9A66E; margin-bottom: var(--space-3); }
+
+/* Services revision (30 Sept 2026): turnaround line, What you receive, sample extract */
+.service-time { font-family: var(--font-mono); font-size: 12px; line-height: 18px; letter-spacing: .04em; color: var(--bronze); margin: 2px 0 var(--space-2); }
+.service-card p.service-time { flex-grow: 0; color: var(--bronze); }
+.receive-list { list-style: none; counter-reset: rc; margin-top: var(--space-4); border-top: 1px solid var(--border); }
+.receive-list li { counter-increment: rc; display: flex; gap: var(--space-3); padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--ink); }
+.receive-list li::before { content: counter(rc, decimal-leading-zero); font-family: var(--font-mono); font-size: 12px; line-height: 26px; color: var(--bronze); flex-shrink: 0; }
+.sample { background: var(--surface-raised); border: 1px solid var(--border); border-top: 3px solid var(--bronze); border-radius: var(--radius-md); padding: var(--space-4); min-width: 0; }
+.sample-label { font-family: var(--font-mono); font-size: 11px; line-height: 16px; letter-spacing: .06em; text-transform: uppercase; color: var(--bronze); margin-bottom: var(--space-3); }
+.sample dl > div { padding: 12px 0; border-top: 1px solid var(--border); }
+.sample dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 4px; }
+.sample dd { font-family: var(--font-display); font-size: 18px; line-height: 28px; color: var(--ink); overflow-wrap: anywhere; }
+.tier-price span[data-fee] { font-family: inherit; font-size: inherit; color: inherit; margin-left: 0; }

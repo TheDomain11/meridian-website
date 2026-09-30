@@ -385,17 +385,7 @@ h3        { font-size: 28px; line-height: 35px; }
 .eyebrow .idx { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; color: var(--ink-muted); margin-right: var(--space-2); }
 
 /* Evidence figures */
-.stat-grid { display: grid; grid-template-columns: 1fr; border-top: 2px solid var(--ink); }
-@media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1040px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
-.stat { padding: var(--space-4) var(--space-4) var(--space-4) 0; border-bottom: 1px solid var(--border); }
-@media (min-width: 1040px) { .stat { padding-left: var(--space-4); border-left: 1px solid var(--border); border-bottom: 0; } .stat:first-child { padding-left: 0; border-left: 0; } }
-.stat-fig { font-family: var(--font-display); font-size: 48px; line-height: 52px; color: var(--ink); }
-.stat-fig small { font-size: 22px; color: var(--ink-muted); }
-.stat-what { margin-top: var(--space-2); font-size: 15px; line-height: 23px; color: var(--ink); }
-.stat-src { margin-top: var(--space-2); font-family: var(--font-mono); font-size: 12px; line-height: 18px; color: var(--ink-muted); overflow-wrap: anywhere; }
-.evidence-note { margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--border); max-width: 760px; font-size: 14px; line-height: 22px; color: var(--ink-muted); }
-
+@media (min-width: 640px) { @media (min-width: 1040px) { @media (min-width: 1040px) { 
 /* Dark update band: the regulatory update must not blend into the paper sections */
 .section-dark { background: var(--ink); color: #E7E1D5; border-top: 4px solid var(--bronze); }
 .section-dark h2, .section-dark h3 { color: #F6F1E7; }
@@ -447,7 +437,6 @@ h3        { font-size: 28px; line-height: 35px; }
 .update-lede { max-width: 720px; margin-bottom: var(--space-5); color: #C9C1B3; font-size: 17px; line-height: 28px; }
 .cat-list li { padding: 14px 0; }
 .spec-list div { padding: 16px 0; }
-.stat-what { margin-top: var(--space-3); }
 .fees.method td { padding-top: 18px; padding-bottom: 18px; }
 .section-head { margin-bottom: 48px; }
 .cat-label { font-family: var(--font-mono); font-size: 12px; letter-spacing: .05em; text-transform: uppercase; color: #C9A66E; margin-bottom: var(--space-3); }
@@ -464,3 +453,27 @@ h3        { font-size: 28px; line-height: 35px; }
 .sample dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 4px; }
 .sample dd { font-family: var(--font-display); font-size: 18px; line-height: 28px; color: var(--ink); overflow-wrap: anywhere; }
 .tier-price span[data-fee] { font-family: inherit; font-size: inherit; color: inherit; margin-left: 0; }
+
+
+/* ── Refinement pass: how it works, questions, polish ───── */
+.steps { list-style: none; display: grid; gap: var(--space-4); grid-template-columns: 1fr; counter-reset: none; }
+@media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); gap: var(--space-5); } }
+.steps li { border-top: 2px solid var(--ink); padding-top: var(--space-4); }
+.step-num { display: block; font-family: var(--font-display); font-size: 44px; line-height: 44px; color: var(--bronze); margin-bottom: var(--space-3); }
+.steps h3 { font-size: 24px; line-height: 30px; margin-bottom: var(--space-2); }
+.steps p { color: var(--ink-muted); }
+
+.faq { border-top: 1px solid var(--border); }
+.faq details { border-bottom: 1px solid var(--border); }
+.faq summary { cursor: pointer; list-style: none; padding: var(--space-3) 36px var(--space-3) 0; position: relative; font-family: var(--font-display); font-size: 21px; line-height: 28px; color: var(--ink); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 4px; top: var(--space-3); font-family: var(--font-sans); font-size: 22px; line-height: 28px; color: var(--bronze); }
+.faq details[open] summary::after { content: "\2212"; }
+.faq details p { padding: 0 var(--space-4) var(--space-4) 0; color: var(--ink-muted); }
+
+/* rhythm and finish */
+.section { padding-top: clamp(56px, 8vw, 96px); padding-bottom: clamp(56px, 8vw, 96px); }
+.section-head { max-width: 760px; margin-bottom: var(--space-5); }
+.card { transition: border-color .15s ease; }
+.card:hover { border-color: var(--bronze); }
+.notice-bar { font-size: 14px; }

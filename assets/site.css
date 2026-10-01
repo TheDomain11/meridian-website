@@ -385,7 +385,7 @@ h3        { font-size: 28px; line-height: 35px; }
 .eyebrow .idx { font-family: var(--font-mono); font-size: 12px; letter-spacing: .06em; color: var(--ink-muted); margin-right: var(--space-2); }
 
 /* Evidence figures */
-@media (min-width: 640px) { @media (min-width: 1040px) { @media (min-width: 1040px) { 
+
 /* Dark update band: the regulatory update must not blend into the paper sections */
 .section-dark { background: var(--ink); color: #E7E1D5; border-top: 4px solid var(--bronze); }
 .section-dark h2, .section-dark h3 { color: #F6F1E7; }
